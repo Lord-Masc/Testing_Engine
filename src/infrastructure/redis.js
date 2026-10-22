@@ -14,7 +14,7 @@ redisClient.on('error',(error)=>{
     console.log('Redis client error:', error.message); 
 })
 
- export async function chekRedis() {
+export async function checkRedis() {
     if(!redisClient.isReady()){
         throw new Error('Redis client is not ready');
     }
