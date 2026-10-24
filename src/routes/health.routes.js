@@ -1,6 +1,6 @@
 import {Router} from "express"
-import { checkPostgres } from "../infrastructure/postgres"
-import { checkRedis } from "../infrastructure/redis"
+import { checkPostgres } from "../infrastructure/postgres.js";
+import { checkRedis } from "../infrastructure/redis.js";
 
 
 const router = Router();

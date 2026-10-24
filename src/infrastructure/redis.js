@@ -1,5 +1,5 @@
 import { createClient } from "redis";
-import { env } from "../config/env";
+import { env } from "../config/env.js";
 
 export const redisClient = createClient({
     url:env.redisUrl,
@@ -15,7 +15,7 @@ redisClient.on('error',(error)=>{
 })
 
 export async function checkRedis() {
-    if(!redisClient.isReady()){
+    if(!redisClient.isReady){
         throw new Error('Redis client is not ready');
     }
     await redisClient.ping();

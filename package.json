@@ -1,23 +1,20 @@
+
 {
-  "name": "testing.engine",
+  "name": "automatic-ai-api-testing-engine",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "private": true,
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
   "dependencies": {
-    "dotenv": "^18.0.8",
-    "express": "^5.3.0",
-    "pg": "^8.23.1",
-    "redis": "^6.3.0"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }

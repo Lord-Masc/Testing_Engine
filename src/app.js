@@ -2,7 +2,7 @@ import express from "express"
 import healthRoutes from "./routes/health.routes.js"
 
 const app = express()
- app.disable("x-powred-by")
+ app.disable("x-powered-by")
  app.use(express.json({limit:"1mb"}))
 
  app.use("/health",healthRoutes)

@@ -1,7 +1,7 @@
-import app from "./app"
-import { env } from "./config/env"
-import { pool } from "./infrastructure/postgres"
-import { redisClient } from "./infrastructure/redis"
+import app from "./app.js"
+import { env } from "./config/env.js"
+import { pool } from "./infrastructure/postgres.js"
+import { redisClient } from "./infrastructure/redis.js"
 
 let server;
 let shuttingDown = false;
